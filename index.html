@@ -191,6 +191,12 @@
 			padding: 9px 15px;
 			border-radius: 13px;
 		}
+		#create {
+			text-align: right; /* Align text to the right side of its container */
+ 			color: rgb(118, 113, 113); /* Set the text color to light grey */
+			font-size: 20px;
+			line-height: 1;
+		}
 
 	</style>
 	<script type="text/javascript">
@@ -241,7 +247,7 @@
 	</script>
 </head>
 <body>
-    <br><br><br><br><br>
+    <br><br><br>
 	<h1> 疼痛自我功效問卷 </h1>
     <button class = "increase-font-size-btn" id="increase-font-button">大
     </button>
@@ -311,7 +317,7 @@
 
     </script>
 
-	<h2> 威爾斯親王醫院 物理治療部</h2>
+	<h2> 新界東醫院聯網 物理治療部</h2>
 	<form>
 		<p>請根據你<u><strong>現時</u></strong>的狀況，<strong>在儘管有痛的情況下</strong>，評定你對於完成以下事情的信心程度。</p>
         <br>
@@ -408,11 +414,15 @@
 		<br>
 		<div class="button-container">
 			<input type="reset" value="重設" onclick="resetContent()"> 
-			<button type="button" class="btn-primary" onclick="calculateQuickDASH(event)">提交</button>
+			<button type="button" class="btn-primary" onclick="calculateQuickDASH(event)">計算</button>
 		</div>
 		<br>
 		<div class="centered-text">
 		  <h1>謝謝您完成問卷</h1>
+		</div>
+		<div id="create">
+			<br>
+			<p>威爾斯親王醫院物理治療部制作</p>
 		</div>
 	</form>
 	<div id="popup">
